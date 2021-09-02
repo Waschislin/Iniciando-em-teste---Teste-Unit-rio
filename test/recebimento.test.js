@@ -12,7 +12,7 @@ describe('Testando com o pagamento realizado no dia correto', () => {
   })
 })
 
-describe('Testando com o pagamento sendo realizado antes do dia', () => {
+describe('Testando com o pagamento sendo realizado antes do dia do vencimento', () => {
   test('3.1 valor = 150, dia de pagamento = 10, dia de vencimento = 15', () => {
     expect(recebimento(150, 10, 15)).toBe(150)
   })
